@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JAVA 13-14</title>
+	<link type="text/css" href="css/reset.css" rel="stylesheet">
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<script type="text/template" id="test">
+	
+		<h1><%= questionFirst %></h1>
+		<input type="checkbox" id="variantFirst">
+		<label for="variantFirst"><%= variantFirst %></label>
+		<input type="checkbox" id="variantSecond">
+		<label for="variantSecond"><%= variantSecond %></label>
+		<input type="checkbox" id="variantThird">
+		<label for="variantThird"><%= variantThird %></label>
+
+	</script>
+	<button value="check">Проверить мои результаты</button>
+</div>
+</body>
+</html>

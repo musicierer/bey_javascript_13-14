@@ -1,4 +1,25 @@
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 20px;
+}
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  position: relative;
+  top: 10px;
+  left: 50px;
+}
+
+label {
+  position: relative;
+  left: 80px;
+  top: -8px;
+}
 
 .container {
   padding-right: 15px;
@@ -10,6 +31,8 @@
 button {
   width: 200px;
   height: 50px;
+  position: relative;
+  top: 450px;
 }
 
 @media (min-width: 768px) {

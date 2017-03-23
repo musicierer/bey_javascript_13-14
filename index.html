@@ -15,15 +15,18 @@
 <body>
 <div class="container">
 	<script type="text/template" id="test">
-	
-		<h1><%= questionFirst %></h1>
-		<input type="checkbox" id="variantFirst">
-		<label for="variantFirst"><%= variantFirst %></label>
-		<input type="checkbox" id="variantSecond">
-		<label for="variantSecond"><%= variantSecond %></label>
-		<input type="checkbox" id="variantThird">
-		<label for="variantThird"><%= variantThird %></label>
+	<% for (var i = 0; i< data.length; i++) { %>
 
+		<h1><%= data[i].questionFirst %></h1>
+	<div class="form">
+		<input type="checkbox" id="variantFirst">
+		<label for="variantFirst"><%= data[i].variantFirst %></label>
+		<input type="checkbox" id="variantSecond">
+		<label for="variantSecond"><%= data[i].variantSecond %></label>
+		<input type="checkbox" id="variantThird">
+		<label for="variantThird"><%= data[i].variantThird %></label>
+	</div>
+	<% }; %>
 	</script>
 	<button value="check">Проверить мои результаты</button>
 </div>

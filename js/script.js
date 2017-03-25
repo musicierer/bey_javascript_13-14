@@ -8,24 +8,30 @@ var question = [
 	{
 		questionTwo: 'Сколько метров в километре?',
 		variantFirst: '100 метров',
-		variantSecond: '500 метров',
-		variantThird: '1000 метров'
+		variantSecond:'1000 метров',
+		variantThird: '500 метров'
 	},
 	{
-		questionThree: 'Каким образом шаблон помещается в HTML документ?',
-		variantFirst: 'Шаблон размещают в любом теге',
-		variantSecond: 'Шаблон размещают в теге <script> с нестандартным атрибутом type',
-		variantThird: 'Шаблон размещают в HTML документе как есть, не оборачивая тегом'
-	}
+		questionFirst: 'В каком объекте хранятся все jQuery-функции?',
+		variantFirst: 'jQuery.fn',
+		variantSecond: ' jQuery.prototype',
+		variantThird: 'jQuery.function'
+	},
 ]; 
+
+right = {
+		variantThird: '100 градусов',
+		variantSecond:'1000 метров',
+		variantFirst: 'jQuery.fn'
+	};
 
 localStorage.setItem('test', JSON.stringify(question));
 
 var get = localStorage.getItem('test');
 
-var answer ={
+var gen1 = JSON.parse(get);
 
-};
+
 
 $(function() {
 
@@ -66,12 +72,13 @@ var $but = $('button');
 $but.on('click', function() {
 
 
-if($('#variantThird').prop('checked')) 
-  alert('Правильный ответ');
-  else if ($('#variantSecond').prop('checked'))
-  alert('Ответ неверный');
-  else if ($('#variantFirst').prop('checked'))
-  alert('Ответ неверный');
+for(i = 0; i<right.length; i++);
+	if($('right[i]').prop('checked')) {
+		 alert('Правильный ответ');
+} else {
+	alert('Ответ неверный');
+};
+
 
 });
 

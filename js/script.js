@@ -1,29 +1,40 @@
 var question = [
 	{
-		questionFirst: 'Какая температуа кипения воды?',
-		variantFirst: '60 градусов',
-		variantSecond: '80 градусов',
-		variantThird: '100 градусов'
+		 question: 'Какая температуа кипения воды?',
+    variants: [
+      '60 градусов',
+      '80 градусов',
+      '100 градусов'
+    ],
+
+    correct: 2
+
 	},
+
 	{
-		questionTwo: 'Сколько метров в километре?',
-		variantFirst: '100 метров',
-		variantSecond:'1000 метров',
-		variantThird: '500 метров'
+		question: 'Сколько метров в километре?',
+	variants: [
+      '100 метров',
+      '1000 метров',
+	  '500 метров'
+    ],
+
+    correct: 1
+
 	},
+
 	{
-		questionFirst: 'В каком объекте хранятся все jQuery-функции?',
-		variantFirst: 'jQuery.fn',
-		variantSecond: ' jQuery.prototype',
-		variantThird: 'jQuery.function'
+		question: 'В каком объекте хранятся все jQuery-функции?',
+	variants: [
+      'jQuery.fn',
+	  'jQuery.prototype',
+	  'jQuery.function'
+    ],
+
+	correct: 0
+
 	},
 ]; 
-
-right = {
-		variantThird: '100 градусов',
-		variantSecond:'1000 метров',
-		variantFirst: 'jQuery.fn'
-	};
 
 localStorage.setItem('test', JSON.stringify(question));
 
@@ -38,23 +49,40 @@ $(function() {
 	var html = $('#test').html();
 	var question = [
 	{
-		questionFirst: 'Какая температуа кипения воды?',
-		variantFirst: '60 градусов',
-		variantSecond: '80 градусов',
-		variantThird: '100 градусов'
+		 question: 'Какая температуа кипения воды?',
+    variants: [
+      '60 градусов',
+      '80 градусов',
+      '100 градусов'
+    ],
+
+    correct: 2
+
 	},
+
 	{
-		questionFirst: 'Сколько метров в километре?',
-		variantFirst: '100 метров',
-		variantSecond: '500 метров',
-		variantThird: '1000 метров'
+		question: 'Сколько метров в километре?',
+	variants: [
+      '100 метров',
+      '1000 метров',
+	  '500 метров'
+    ],
+
+    correct: 1
+
 	},
+
 	{
-		questionFirst: 'В каком объекте хранятся все jQuery-функции?',
-		variantFirst: 'jQuery.fn',
-		variantSecond: ' jQuery.prototype',
-		variantThird: 'jQuery.function'
-	}
+		question: 'В каком объекте хранятся все jQuery-функции?',
+	variants: [
+      'jQuery.fn',
+	  'jQuery.prototype',
+	  'jQuery.function'
+    ],
+
+	correct: 0
+
+	},
 ]; 
 
 	var content = tmpl(html, {
@@ -65,22 +93,22 @@ $(function() {
 
 });
 
-$(function(){
+// $(function(){
 
-var $but = $('button');
+// var $but = $('button');
 
-$but.on('click', function() {
-
-
-for(i = 0; i<right.length; i++);
-	if($('right[i]').prop('checked')) {
-		 alert('Правильный ответ');
-} else {
-	alert('Ответ неверный');
-};
+// $but.on('click', function() {
 
 
-});
+// for(i = 0; i<right.length; i++);
+// 	if($('right[i]').prop('checked')) {
+// 		 alert('Правильный ответ');
+// } else {
+// 	alert('Ответ неверный');
+// };
 
-});
+
+// });
+
+// });
 

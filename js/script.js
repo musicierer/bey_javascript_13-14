@@ -93,22 +93,22 @@ $(function() {
 
 });
 
-// $(function(){
+$(function(){
 
-// var $but = $('button');
+var $but = $('button');
 
-// $but.on('click', function() {
-
-
-// for(i = 0; i<right.length; i++);
-// 	if($('right[i]').prop('checked')) {
-// 		 alert('Правильный ответ');
-// } else {
-// 	alert('Ответ неверный');
-// };
+$but.on('click', function() {
 
 
-// });
+for(j = 0; j < = 3; j++);
+	if($('correct[j]').prop('checked')) {
+		 alert('Правильный ответ');
+} else {
+	alert('Ответ неверный');
+};
 
-// });
+
+});
+
+});
 

@@ -1,25 +1,3 @@
-h1 {
-  font-size: 16px;
-  font-weight: 700;
-  padding-left: 20px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  position: relative;
-  top: 10px;
-  left: 50px;
-}
-
-label {
-  position: relative;
-  left: 80px;
-  top: -8px;
-}
 
 .container {
   padding-right: 15px;
@@ -28,11 +6,85 @@ label {
   margin-left: auto;
 }
 
-button {
-  width: 200px;
+body{
+  background-color: #ddd;
+  font-family: sans-serif;
+}
+
+.test__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 600px;
+  margin-top: -300px;
+  margin-left: -400px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 20px;
+}
+
+.test__header{
+  padding-top: 15px;
+  margin-left: 50px;
+}
+
+input {
+  margin-left: 70px;
+}
+
+h2{
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.test__button{
+  display: block;
+  margin: 50px auto;
   height: 50px;
-  position: relative;
-  top: 450px;
+  width: 300px;
+  background: blue;
+  border-radius: 3px;
+  border: 2px black solid;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 46px;
+}
+
+.modal{
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  background-color: #ddd;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.8);
+}
+
+.results{
+  line-height: 70px;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {

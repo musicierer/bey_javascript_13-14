@@ -13,19 +13,26 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-<div class="container">
-	<script type="text/template" id="test">
-	<% for (var i = 0; i< data.length; i++) { %>
-    <h1><%= data[i].question %></h1>
-    <div class="form">
-      <% for (var j = 0; j< data[i].variants.length; j++) { %>
-      <input type="checkbox" name="variant[<%= i %>][<%= j %>]" id="variant_<%= i %>_<%= j %>">
-      <label for="variant_<%= i %>_<%= j %>"><%= data[i].variants[j] %></label>
+<div class="test__container">
+
+    <div class="questions__block">
+
+    <script type="text/html" id="test">
+
+      <% for (var i = 0; i < data.length; i++) { %>
+  
+        <h2>  <%= data[i].question %>   </h2>
+
+        <input type="checkbox"> <%= data[i].answers[0] %>  
+        <input type="checkbox"> <%= data[i].answers[1] %>  
+        <input type="checkbox"> <%= data[i].answers[2] %>  
+
       <% }; %>
-   </div>
- <% }; %>
-	</script>
-	<button value="check">Проверить мои результаты</button>
-</div>
+
+    </script>
+    </div>
+
+    <a href="#" class="test__button">Review my results</a>
+  </div>
 </body>
 </html>
